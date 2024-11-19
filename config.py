@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     db_name: str = os.getenv("DB_NAME")
     jwt_secret_key: str = os.getenv("JWT_SECRET")
     jwt_algorithm: str = os.getenv("JWT_ALGORITHM")
-    jwt_expiration_minutes: int =os.getenv("JWT_EXPIRY") # This needs to be parsed correctly if it's in "30m" or "1h" format
+    jwt_expiration_minutes: int = 30 # This needs to be parsed correctly if it's in "30m" or "1h" format
 
     # Optional fields with default values (if any)
     db_uri: Optional[str] = None

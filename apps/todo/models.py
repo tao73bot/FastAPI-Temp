@@ -6,6 +6,13 @@ class TodoCreate(BaseModel):
     title: str
     description: str
 
+class TodoUpdate(BaseModel):
+    title: str
+    description: str
+
+class TodoDelete(BaseModel):
+    title: str
+
 # Pydantic model for Todo in DB
 class TodoInDB(BaseModel):
     title: str

@@ -18,6 +18,7 @@ class UserInDB(BaseModel):
 class UserMongo(BaseModel):
     _id: ObjectId
     username: str
+    full_name: str
     hashed_password: str
 
     class Config:
