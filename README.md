@@ -1,5 +1,36 @@
 # FAST API CRUD with MongoDB
 
+## I follow this folder structure
+
+```paintext
+project/
+│
+├── .venv/                   # Virtual environment
+│
+├── apps/                     # Application-specific modules
+│   ├── user/                 # User-related module
+│   │   ├── models.py         # MongoDB models (e.g., User model)
+│   │   ├── repository.py     # Data access logic (CRUD operations)
+│   │   ├── route.py          # Routes for user-related endpoints
+│   │   ├── schema.py         # Pydantic schemas for User validation
+│   │   └── services/         # Services directory (business logic)
+│   │       └── auth_service.py # Authentication logic
+│   │
+│   └── todo/                 # Todo-related module
+│       ├── models.py         # MongoDB models (e.g., Todo model)
+│       ├── repository.py     # Data access logic (CRUD operations)
+│       ├── route.py          # Routes for todo-related endpoints
+│       └── schema.py         # Pydantic schemas for Todo validation
+│
+├── config.py                 # Configuration settings for the project
+├── main.py                   # FastAPI application entry point
+├── requirements.txt          # List of project dependencies
+├── .env                      # Environment variables (should not be in version control)
+├── .gitignore                # Git ignore file to exclude unwanted files/folders
+└── README.md                 # Project documentation
+
+```
+
 ## Table of Contents
 
 1. [Installation](#installation)  
